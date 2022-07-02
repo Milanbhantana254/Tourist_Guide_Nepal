@@ -1,0 +1,940 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Emergency_contact_activity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/gradient_top"
+                    android:orientation="vertical"
+                    tools:ignore="MissingConstraints">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="horizontal">
+
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:id="@+id/tourlogo"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:layout_gravity="center"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/splashlogo" />
+
+                                <TextView
+                                    android:layout_gravity="center_vertical"
+                                    android:text="Tour Guide Nepal"
+                                    android:textSize="15dp"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/white"
+                                    android:layout_width="300dp"
+                                    android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="30dp"
+                            android:src="@drawable/emergency" />
+
+                        <com.google.android.material.button.MaterialButton
+                            style="@style/Widget.MaterialComponents.Button.Icon"
+                            android:layout_width="300dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="30dp"
+                            android:backgroundTint="#0abfb3"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="Medical Emergency"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            app:cornerRadius="10dp"
+                            app:icon="@drawable/plus"
+                            app:iconGravity="start"
+                            app:iconSize="30dp"
+                            app:iconTint="@color/black" />
+
+                        <com.google.android.material.button.MaterialButton
+                            style="@style/Widget.MaterialComponents.Button.Icon"
+                            android:layout_width="300dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="50dp"
+                            android:backgroundTint="#0abfb3"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="police station"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            app:cornerRadius="10dp"
+                            app:icon="@drawable/police_image"
+                            app:iconGravity="start"
+                            app:iconSize="30dp"
+                            app:iconTint="@color/black" />
+
+                </LinearLayout>
+
+                <FrameLayout
+            android:id="@+id/backhome"
+            android:layout_width="270dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="-25dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginEnd="80dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/rounded_frame_layout">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="EMERGENCY CONTACTS"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:textSize="21dp"
+                    android:layout_gravity="center"
+                    android:gravity="center" />
+        </FrameLayout>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_marginTop="50dp"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    app:cardCornerRadius="10dp"
+                    android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:padding="10dp"
+                            android:layout_width="340dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/gradient_background"
+                            android:orientation="horizontal">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_width="96dp"
+                                    android:layout_height="96dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:src="@drawable/kathmandu" />
+
+                                <RelativeLayout
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="10dp"
+                                    android:padding="5dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                        <TextView
+                                            android:id="@+id/titlee1"
+                                            android:padding="10dp"
+                                            android:text="Kathmandu"
+                                            android:layout_gravity="center_vertical"
+                                            android:textColor="@color/black"
+                                            android:textSize="20dp"
+                                            android:textStyle="bold"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"/>
+
+                                        <ImageView
+                                            android:layout_marginTop="4dp"
+                                            android:id="@+id/imagee1"
+                                            android:layout_below="@+id/titlee1"
+                                            android:src="@drawable/plus"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"/>
+
+                                        <TextView
+                                            android:padding="4dp"
+                                            android:id="@+id/dese1"
+                                            android:layout_below="@+id/titlee1"
+                                            android:layout_toEndOf="@id/imagee1"
+                                            android:text="01-4412303, 01-5159266"
+                                            android:textColor="@color/black"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"/>
+
+                                        <ImageView
+                                            android:layout_marginTop="6dp"
+                                            android:id="@+id/imagee12"
+                                            android:layout_below="@+id/dese1"
+                                            android:src="@drawable/police_image"
+                                            android:scaleType="fitXY"
+                                            android:layout_width="25dp"
+                                            android:layout_height="25dp"/>
+
+                                        <TextView
+                                            android:layout_toEndOf="@id/imagee12"
+                                            android:layout_below="@+id/dese1"
+                                            android:padding="6dp"
+                                            android:text="01-4231466"
+                                            android:textColor="@color/black"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"/>
+
+                                </RelativeLayout>
+
+
+                        </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_marginTop="50dp"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    app:cardCornerRadius="20dp"
+                    android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:padding="10dp"
+                            android:layout_width="340dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/gradient_background"
+                            android:orientation="horizontal">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_width="96dp"
+                                    android:layout_height="96dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:src="@drawable/chitwan" />
+
+                                <RelativeLayout
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="10dp"
+                                    android:padding="5dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                        <TextView
+                                            android:id="@+id/titlee2"
+                                            android:padding="10dp"
+                                            android:text="Chitwan"
+                                            android:layout_gravity="center_vertical"
+                                            android:textColor="@color/black"
+                                            android:textSize="20dp"
+                                            android:textStyle="bold"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"/>
+
+                                        <ImageView
+                                            android:layout_marginTop="4dp"
+                                            android:id="@+id/imagee2"
+                                            android:layout_below="@+id/titlee2"
+                                            android:src="@drawable/plus"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"/>
+
+                                        <TextView
+                                            android:padding="4dp"
+                                            android:id="@+id/dese2"
+                                            android:layout_below="@+id/titlee2"
+                                            android:layout_toEndOf="@id/imagee2"
+                                            android:text="056-524300, 056-527101"
+                                            android:textColor="@color/black"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"/>
+
+                                        <ImageView
+                                            android:layout_marginTop="6dp"
+                                            android:id="@+id/imagee22"
+                                            android:layout_below="@+id/dese2"
+                                            android:src="@drawable/police_image"
+                                            android:scaleType="fitXY"
+                                            android:layout_width="25dp"
+                                            android:layout_height="25dp"/>
+
+                                        <TextView
+                                            android:layout_toEndOf="@id/imagee22"
+                                            android:layout_below="@+id/dese2"
+                                            android:padding="6dp"
+                                            android:text="056-520155, 056-560199"
+                                            android:textColor="@color/black"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"/>
+
+                                </RelativeLayout>
+
+
+                        </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_marginTop="50dp"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    app:cardCornerRadius="20dp"
+                    android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:padding="10dp"
+                            android:layout_width="340dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/gradient_background"
+                            android:orientation="horizontal">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_width="96dp"
+                                    android:layout_height="96dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:src="@drawable/dolakha" />
+
+                                <RelativeLayout
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="10dp"
+                                    android:padding="5dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                        <TextView
+                                            android:id="@+id/titlee3"
+                                            android:padding="10dp"
+                                            android:text="Dolakha"
+                                            android:layout_gravity="center_vertical"
+                                            android:textColor="@color/black"
+                                            android:textSize="20dp"
+                                            android:textStyle="bold"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"/>
+
+                                        <ImageView
+                                            android:layout_marginTop="4dp"
+                                            android:id="@+id/imagee3"
+                                            android:layout_below="@+id/titlee3"
+                                            android:src="@drawable/plus"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"/>
+
+                                        <TextView
+                                            android:padding="4dp"
+                                            android:id="@+id/dese3"
+                                            android:layout_below="@+id/titlee3"
+                                            android:layout_toEndOf="@id/imagee3"
+                                            android:text="049-421821, 049-412020"
+                                            android:textColor="@color/black"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"/>
+
+                                        <ImageView
+                                            android:layout_marginTop="6dp"
+                                            android:id="@+id/imagee32"
+                                            android:layout_below="@+id/dese3"
+                                            android:src="@drawable/police_image"
+                                            android:scaleType="fitXY"
+                                            android:layout_width="25dp"
+                                            android:layout_height="25dp"/>
+
+                                        <TextView
+                                            android:layout_toEndOf="@id/imagee32"
+                                            android:layout_below="@+id/dese3"
+                                            android:padding="6dp"
+                                            android:text="049-420199"
+                                            android:textColor="@color/black"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"/>
+
+                                </RelativeLayout>
+
+
+                        </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_marginTop="50dp"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    app:cardCornerRadius="20dp"
+                    android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:padding="10dp"
+                            android:layout_width="340dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/gradient_background"
+                            android:orientation="horizontal">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_width="96dp"
+                                    android:layout_height="96dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:src="@drawable/gorkha" />
+
+                                <RelativeLayout
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="10dp"
+                                    android:padding="5dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                        <TextView
+                                            android:id="@+id/titlee4"
+                                            android:padding="10dp"
+                                            android:text="Gorkha"
+                                            android:layout_gravity="center_vertical"
+                                            android:textColor="@color/black"
+                                            android:textSize="20dp"
+                                            android:textStyle="bold"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"/>
+
+                                        <ImageView
+                                            android:layout_marginTop="4dp"
+                                            android:id="@+id/imagee4"
+                                            android:layout_below="@+id/titlee4"
+                                            android:src="@drawable/plus"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"/>
+
+                                        <TextView
+                                            android:padding="4dp"
+                                            android:id="@+id/dese4"
+                                            android:layout_below="@+id/titlee4"
+                                            android:layout_toEndOf="@id/imagee4"
+                                            android:text="064-420208"
+                                            android:textColor="@color/black"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"/>
+
+                                        <ImageView
+                                            android:layout_marginTop="6dp"
+                                            android:id="@+id/imagee42"
+                                            android:layout_below="@+id/dese4"
+                                            android:src="@drawable/police_image"
+                                            android:scaleType="fitXY"
+                                            android:layout_width="25dp"
+                                            android:layout_height="25dp"/>
+
+                                        <TextView
+                                            android:layout_toEndOf="@id/imagee42"
+                                            android:layout_below="@+id/dese4"
+                                            android:padding="6dp"
+                                            android:text="064-420237"
+                                            android:textColor="@color/black"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"/>
+
+                                </RelativeLayout>
+
+
+                        </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_marginTop="50dp"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    app:cardCornerRadius="20dp"
+                    android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:padding="10dp"
+                            android:layout_width="340dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/gradient_background"
+                            android:orientation="horizontal">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_width="96dp"
+                                    android:layout_height="96dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:src="@drawable/janakpur" />
+
+                                <RelativeLayout
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="10dp"
+                                    android:padding="5dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                        <TextView
+                                            android:id="@+id/titlee5"
+                                            android:padding="10dp"
+                                            android:text="Janakpur"
+                                            android:layout_gravity="center_vertical"
+                                            android:textColor="@color/black"
+                                            android:textSize="20dp"
+                                            android:textStyle="bold"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"/>
+
+                                        <ImageView
+                                            android:layout_marginTop="4dp"
+                                            android:id="@+id/imagee5"
+                                            android:layout_below="@+id/titlee5"
+                                            android:src="@drawable/plus"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"/>
+
+                                        <TextView
+                                            android:padding="4dp"
+                                            android:id="@+id/dese5"
+                                            android:layout_below="@+id/titlee5"
+                                            android:layout_toEndOf="@id/imagee5"
+                                            android:text="041-525501, 041-620202"
+                                            android:textColor="@color/black"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"/>
+
+                                        <ImageView
+                                            android:layout_marginTop="6dp"
+                                            android:id="@+id/imagee52"
+                                            android:layout_below="@+id/dese5"
+                                            android:src="@drawable/police_image"
+                                            android:scaleType="fitXY"
+                                            android:layout_width="25dp"
+                                            android:layout_height="25dp"/>
+
+                                        <TextView
+                                            android:layout_toEndOf="@id/imagee52"
+                                            android:layout_below="@+id/dese5"
+                                            android:padding="6dp"
+                                            android:text="041-520099"
+                                            android:textColor="@color/black"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"/>
+
+                                </RelativeLayout>
+
+
+                        </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_marginTop="50dp"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    app:cardCornerRadius="20dp"
+                    android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:padding="10dp"
+                            android:layout_width="340dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/gradient_background"
+                            android:orientation="horizontal">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_width="96dp"
+                                    android:layout_height="96dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:src="@drawable/lumbini" />
+
+                                <RelativeLayout
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="10dp"
+                                    android:padding="5dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                        <TextView
+                                            android:id="@+id/titlee6"
+                                            android:padding="10dp"
+                                            android:text="Lumbini"
+                                            android:layout_gravity="center_vertical"
+                                            android:textColor="@color/black"
+                                            android:textSize="20dp"
+                                            android:textStyle="bold"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"/>
+
+                                        <ImageView
+                                            android:layout_marginTop="4dp"
+                                            android:id="@+id/imagee6"
+                                            android:layout_below="@+id/titlee6"
+                                            android:src="@drawable/plus"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"/>
+
+                                        <TextView
+                                            android:padding="4dp"
+                                            android:id="@+id/dese6"
+                                            android:layout_below="@+id/titlee6"
+                                            android:layout_toEndOf="@id/imagee6"
+                                            android:text="071-540200, 071-523827"
+                                            android:textColor="@color/black"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"/>
+
+                                        <ImageView
+                                            android:layout_marginTop="6dp"
+                                            android:id="@+id/imagee62"
+                                            android:layout_below="@+id/dese6"
+                                            android:src="@drawable/police_image"
+                                            android:scaleType="fitXY"
+                                            android:layout_width="25dp"
+                                            android:layout_height="25dp"/>
+
+                                        <TextView
+                                            android:layout_toEndOf="@id/imagee62"
+                                            android:layout_below="@+id/dese6"
+                                            android:padding="6dp"
+                                            android:text="71-580171 , 9857090346"
+                                            android:textColor="@color/black"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"/>
+
+                                </RelativeLayout>
+
+
+                        </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_marginTop="50dp"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    app:cardCornerRadius="20dp"
+                    android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:padding="10dp"
+                            android:layout_width="340dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/gradient_background"
+                            android:orientation="horizontal">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_width="96dp"
+                                    android:layout_height="96dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:src="@drawable/mustang" />
+
+                                <RelativeLayout
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="10dp"
+                                    android:padding="5dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                        <TextView
+                                            android:id="@+id/titlee7"
+                                            android:padding="10dp"
+                                            android:text="Mustang"
+                                            android:layout_gravity="center_vertical"
+                                            android:textColor="@color/black"
+                                            android:textSize="20dp"
+                                            android:textStyle="bold"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"/>
+
+                                        <ImageView
+                                            android:layout_marginTop="4dp"
+                                            android:id="@+id/imagee7"
+                                            android:layout_below="@+id/titlee7"
+                                            android:src="@drawable/plus"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"/>
+
+                                        <TextView
+                                            android:padding="4dp"
+                                            android:id="@+id/dese7"
+                                            android:layout_below="@+id/titlee7"
+                                            android:layout_toEndOf="@id/imagee7"
+                                            android:text="069-440088, 069-440291"
+                                            android:textColor="@color/black"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"/>
+
+                                        <ImageView
+                                            android:layout_marginTop="6dp"
+                                            android:id="@+id/imagee72"
+                                            android:layout_below="@+id/dese7"
+                                            android:src="@drawable/police_image"
+                                            android:scaleType="fitXY"
+                                            android:layout_width="25dp"
+                                            android:layout_height="25dp"/>
+
+                                        <TextView
+                                            android:layout_toEndOf="@id/imagee72"
+                                            android:layout_below="@+id/dese7"
+                                            android:padding="6dp"
+                                            android:text="069-440099"
+                                            android:textColor="@color/black"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"/>
+
+                                </RelativeLayout>
+
+
+                        </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_marginTop="50dp"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    app:cardCornerRadius="20dp"
+                    android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:padding="10dp"
+                            android:layout_width="340dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/gradient_background"
+                            android:orientation="horizontal">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_width="96dp"
+                                    android:layout_height="96dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:src="@drawable/pokhara" />
+
+                                <RelativeLayout
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="10dp"
+                                    android:padding="5dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                        <TextView
+                                            android:id="@+id/titlee8"
+                                            android:padding="10dp"
+                                            android:text="Pokhara"
+                                            android:layout_gravity="center_vertical"
+                                            android:textColor="@color/black"
+                                            android:textSize="20dp"
+                                            android:textStyle="bold"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"/>
+
+                                        <ImageView
+                                            android:layout_marginTop="4dp"
+                                            android:id="@+id/imagee8"
+                                            android:layout_below="@+id/titlee8"
+                                            android:src="@drawable/plus"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"/>
+
+                                        <TextView
+                                            android:padding="4dp"
+                                            android:id="@+id/dese8"
+                                            android:layout_below="@+id/titlee8"
+                                            android:layout_toEndOf="@id/imagee8"
+                                            android:text="061-528243, 061-430342"
+                                            android:textColor="@color/black"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"/>
+
+                                        <ImageView
+                                            android:layout_marginTop="6dp"
+                                            android:id="@+id/imagee82"
+                                            android:layout_below="@+id/dese8"
+                                            android:src="@drawable/police_image"
+                                            android:scaleType="fitXY"
+                                            android:layout_width="25dp"
+                                            android:layout_height="25dp"/>
+
+                                        <TextView
+                                            android:layout_toEndOf="@id/imagee82"
+                                            android:layout_below="@+id/dese8"
+                                            android:padding="6dp"
+                                            android:text="061-462500, 061-462761"
+                                            android:textColor="@color/black"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"/>
+
+                                </RelativeLayout>
+
+
+                        </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_marginTop="50dp"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    app:cardCornerRadius="20dp"
+                    android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:padding="10dp"
+                            android:layout_width="340dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/gradient_background"
+                            android:orientation="horizontal">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_width="96dp"
+                                    android:layout_height="96dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:src="@drawable/solukhumbu" />
+
+                                <RelativeLayout
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="10dp"
+                                    android:padding="5dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                        <TextView
+                                            android:id="@+id/titlee9"
+                                            android:padding="10dp"
+                                            android:text="Solukhumbu"
+                                            android:layout_gravity="center_vertical"
+                                            android:textColor="@color/black"
+                                            android:textSize="20dp"
+                                            android:textStyle="bold"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"/>
+
+                                        <ImageView
+                                            android:layout_marginTop="4dp"
+                                            android:id="@+id/imagee9"
+                                            android:layout_below="@+id/titlee9"
+                                            android:src="@drawable/plus"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"/>
+
+                                        <TextView
+                                            android:padding="4dp"
+                                            android:id="@+id/dese9"
+                                            android:layout_below="@+id/titlee9"
+                                            android:layout_toEndOf="@id/imagee9"
+                                            android:text="038-520188"
+                                            android:textColor="@color/black"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"/>
+
+                                        <ImageView
+                                            android:layout_marginTop="6dp"
+                                            android:id="@+id/imagee92"
+                                            android:layout_below="@+id/dese9"
+                                            android:src="@drawable/police_image"
+                                            android:scaleType="fitXY"
+                                            android:layout_width="25dp"
+                                            android:layout_height="25dp"/>
+
+                                        <TextView
+                                            android:layout_toEndOf="@id/imagee92"
+                                            android:layout_below="@+id/dese9"
+                                            android:padding="6dp"
+                                            android:text="038-520199"
+                                            android:textColor="@color/black"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"/>
+
+                                </RelativeLayout>
+
+
+                        </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_marginBottom="40dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    app:cardCornerRadius="20dp"
+                    android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:padding="10dp"
+                            android:layout_width="340dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/gradient_background"
+                            android:orientation="horizontal">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_width="96dp"
+                                    android:layout_height="96dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:src="@drawable/tanahun" />
+
+                                <RelativeLayout
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="10dp"
+                                    android:padding="5dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                        <TextView
+                                            android:id="@+id/titlee10"
+                                            android:padding="10dp"
+                                            android:text="Tanahun"
+                                            android:layout_gravity="center_vertical"
+                                            android:textColor="@color/black"
+                                            android:textSize="20dp"
+                                            android:textStyle="bold"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"/>
+
+                                        <ImageView
+                                            android:layout_marginTop="4dp"
+                                            android:id="@+id/imagee10"
+                                            android:layout_below="@+id/titlee10"
+                                            android:src="@drawable/plus"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"/>
+
+                                        <TextView
+                                            android:padding="4dp"
+                                            android:id="@+id/dese10"
+                                            android:layout_below="@+id/titlee10"
+                                            android:layout_toEndOf="@id/imagee10"
+                                            android:text="065-560102, 065-580007"
+                                            android:textColor="@color/black"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"/>
+
+                                        <ImageView
+                                            android:layout_marginTop="6dp"
+                                            android:id="@+id/imagee102"
+                                            android:layout_below="@+id/dese10"
+                                            android:src="@drawable/police_image"
+                                            android:scaleType="fitXY"
+                                            android:layout_width="25dp"
+                                            android:layout_height="25dp"/>
+
+                                        <TextView
+                                            android:layout_toEndOf="@id/imagee102"
+                                            android:layout_below="@+id/dese10"
+                                            android:padding="6dp"
+                                            android:text="065-560199"
+                                            android:textColor="@color/black"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"/>
+
+                                </RelativeLayout>
+
+
+                        </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+
+        </LinearLayout>
+
+
+</ScrollView>

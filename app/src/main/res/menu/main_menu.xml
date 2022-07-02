@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:title="Home"
+            android:icon="@drawable/home"/>
+
+        <item
+            android:id="@+id/nav_select_city"
+            android:title="Select City"
+            android:icon="@drawable/select_place"/>
+
+        <item
+            android:id="@+id/nav_bookhotel"
+            android:title="Book Hotel"
+            android:icon="@drawable/menuiconhotel"/>
+
+        <item
+            android:id="@+id/nav_viewbookhotel"
+            android:title="View Book Hotel"
+            android:icon="@drawable/list1icon"/>
+
+        <item
+            android:id="@+id/nav_viewvehiclerent"
+            android:title="View Vehicle Rent"
+            android:icon="@drawable/list2icon"/>
+
+        <item
+            android:id="@+id/nav_contact"
+            android:title="Emergency Contact"
+            android:icon="@drawable/contact"/>
+
+        <item
+            android:id="@+id/nav_terms"
+            android:title="Terms and Services"
+            android:icon="@drawable/terms_and_services"/>
+
+        <item
+            android:id="@+id/nav_rateapp"
+            android:title="Rate App"
+            android:icon="@drawable/rate_app"/>
+
+        <item
+            android:id="@+id/nav_logout"
+            android:title="Logout"
+            android:icon="@drawable/logout"/>
+
+    </group>
+
+</menu>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.tour_guide_nepal">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the "MyLocation" functionality.
+    -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Tour_Guide_Nepal"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".vehicle.Updatevehiclebooking_activity"
+            android:exported="true" />
+        <activity
+            android:name=".vehicle.ViewVehicleRent"
+            android:exported="true" />
+        <activity android:name=".termsandservices.termsandconditions" />
+        <activity android:name=".termsandservices.front_terms_and_services" />
+        <activity android:name=".updateprofile_activity" />
+        <activity android:name=".Emergency_contact_activity" />
+        <activity android:name=".RateApp" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Splash_activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".vehicle.Fourwheel_Activity" />
+        <activity android:name=".vehicle.TwowheelActivity" />
+        <activity android:name=".vehicle.Vehicle_booking_form_activity" />
+        <activity android:name=".vehicle.Vehiclebooking_activity" />
+        <activity android:name=".vehicle.Vehiclelist" />
+        <activity android:name=".video.pokhara_video_activity" />
+        <activity android:name=".forgotpassword_activity" />
+        <activity android:name=".video.lumbini_video_activity" />
+        <activity android:name=".video.kathmandu_video_activity" />
+        <activity android:name=".video.janakpur_video_activity" />
+        <activity android:name=".video.gorkha_video_activity" />
+        <activity android:name=".video.dolakha_video_activity" />
+        <activity android:name=".video.Chitwan_video_activity" />
+        <activity android:name=".video.mustang_video_activity" />
+        <activity android:name=".video.solukhumbu_video_activity" />
+        <activity android:name=".video.tanahun_video_activity" />
+        <activity android:name=".hotel.HotelBookingDetailedInfoActivity" />
+        <activity android:name=".hotel.Hotelform_update_activity" />
+        <activity android:name=".hotel.HotelBookingInfo" />
+        <activity android:name=".hotel.Hotelbooking_Activity" />
+        <activity android:name=".view.ui.DetailsActivity" />
+        <activity android:name=".view.ui.RealTimeMap" />
+        <activity android:name=".nearbyplaces.tanahun_nearbyplaces" />
+        <activity android:name=".nearbyplaces.solukhumbu_nearbyplaces" />
+        <activity android:name=".nearbyplaces.pokhara_nearbyplaces" />
+        <activity android:name=".nearbyplaces.mustang_nearbyplaces" />
+        <activity android:name=".nearbyplaces.lumbini_nearbyplaces" />
+        <activity android:name=".nearbyplaces.kathmandu_nearbyplaces" />
+        <activity android:name=".nearbyplaces.janakpur_nearbyplaces" />
+        <activity android:name=".nearbyplaces.gorkha_nearbyplaces" />
+        <activity android:name=".nearbyplaces.dolakha_nearbyplaces" />
+        <activity android:name=".nearbyplaces.chitwan_nearbyplaces" />
+        <activity android:name=".weather.Tanahun_weatherActivity" />
+        <activity android:name=".fragments.Selectplaces" />
+        <activity android:name=".maps.kathmandu_map_activity" />
+        <activity android:name=".maps.chitwan_map_activity" />
+        <activity android:name=".maps.dolakha_map_activity" />
+        <activity android:name=".maps.gorkha_map_activity" />
+        <activity android:name=".maps.lumbini_map_activity" />
+        <activity android:name=".maps.mustang_map_activity" />
+        <activity android:name=".maps.pokhara_map_activity" />
+        <activity android:name=".maps.solukhumbu_map_activity" />
+        <activity android:name=".maps.tanahun_map_activity" />
+        <activity android:name=".weather.kathmandu_weatherActivity" />
+        <activity android:name=".weather.chitwan_weatherActivity" />
+        <activity android:name=".weather.dolakha_weatherActivity" />
+        <activity android:name=".weather.gorkha_weatherActivity" />
+        <activity android:name=".weather.janakpur_weatherActivity" />
+        <activity android:name=".weather.lumbini_weatherActivity" />
+        <activity android:name=".weather.mustang_weatherActivity" />
+        <activity android:name=".weather.pokhara_weatherActivity" />
+        <activity android:name=".weather.solukhumbhu_weatherActivity" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".maps.janakpur1_map"
+            android:label="@string/title_activity_janakpur1_map" />
+        <activity android:name=".place_details.tanahun_detail_activity" />
+        <activity android:name=".place_details.solukhumbu_detail_activity" />
+        <activity android:name=".place_details.pokhara_detail_activity" />
+        <activity android:name=".place_details.mustang_detail_activity" />
+        <activity android:name=".place_details.lumbini_detail_activity" />
+        <activity android:name=".place_details.kathmandu_detail_activity" />
+        <activity android:name=".place_details.janakpur_detail_activity" />
+        <activity android:name=".place_details.gorkha_detail_activity" />
+        <activity android:name=".place_details.dolakha_detail_activity" />
+        <activity android:name=".place_details.chitwan_detail_activity" />
+        <activity android:name=".Signup" />
+    </application>
+
+</manifest>

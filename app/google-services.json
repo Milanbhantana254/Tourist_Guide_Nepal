@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "854497079898",
+    "project_id": "myproject-5d28d",
+    "storage_bucket": "myproject-5d28d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:854497079898:android:9ea7d5e06f2eed29b0de63",
+        "android_client_info": {
+          "package_name": "com.example.tour_guide_nepal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "854497079898-auhj1ogp3ngvscjg6osu9f7kabucpgmr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQWiOAQi4Mr2UGzKpHBIhRKoJ5thwX5KQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "854497079898-auhj1ogp3ngvscjg6osu9f7kabucpgmr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".video.mustang_video_activity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:videoId="a33PkYR1T_I"
+                app:autoPlay="true"
+                app:showYouTubeButton="false"
+                tools:ignore="MissingConstraints" />
+
+            <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:videoId="X7xxu9uxdn8"
+                android:layout_marginTop="16dp"
+                app:autoPlay="false"
+                app:showYouTubeButton="false"
+                tools:ignore="MissingConstraints" />
+
+            <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:videoId="RpGsja5lEj8"
+                android:layout_marginTop="16dp"
+                app:autoPlay="false"
+                app:showYouTubeButton="false"
+                tools:ignore="MissingConstraints" />
+
+            <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:videoId="77Q4ppL7Rmo"
+                android:layout_marginTop="16dp"
+                app:autoPlay="false"
+                app:showYouTubeButton="false"
+                tools:ignore="MissingConstraints" />
+
+            <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:videoId="Rr5S1TPTQco"
+                android:layout_marginTop="16dp"
+                app:autoPlay="false"
+                app:showYouTubeButton="false"
+                tools:ignore="MissingConstraints" />
+            cG1T5-GonuQ
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

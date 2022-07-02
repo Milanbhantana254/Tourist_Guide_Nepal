@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".hotel.Hotelbooking_Activity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp"
+            android:background="#899c8e"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/hotelimage"/>
+
+            <TextView
+                android:text="HOTEL BOOKING"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="20dp"
+                android:layout_gravity="center">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="20dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:text="Full Name"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etfullname"
+                        android:background="#B2BEB5"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"/>
+
+                    <TextView
+
+                        android:layout_marginTop="30dp"
+                        android:text="Email"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etemail"
+                        android:hint="eg: something@email.com"
+                        android:background="#B2BEB5"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"/>
+
+                    <TextView
+
+                        android:layout_marginTop="30dp"
+                        android:text="Phone Number"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etphonenumber"
+                        android:hint=""
+                        android:maxLength="10"
+                        app:prefixText="+977"
+                        android:background="#B2BEB5"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"/>
+
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:text="Hotel Name"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/ethotelname"
+                        android:background="#B2BEB5"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"/>
+
+                    <TextView
+                        android:layout_marginTop="30dp"
+                        android:text="Room Type"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+                    <Spinner
+                        android:id="@+id/etroomtype"
+                        android:text="Please select"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:inputType="none"/>
+
+                    <TextView
+                        android:layout_marginTop="30dp"
+                        android:text="No.of guest"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:background="#B2BEB5"
+                        android:id="@+id/etguestnumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"/>
+
+                    <LinearLayout
+                        android:layout_marginTop="30dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                    <TextView
+                    android:text="Arrival Date/Time"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/datefrom"
+                        android:layout_marginLeft="50dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="date"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="30dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:text="Departure Date"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:id="@+id/dateto"
+                            android:layout_marginLeft="50dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="date"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_marginTop="30dp"
+                        android:text="Special Requests"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/comments"
+                        android:background="#B2BEB5"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"/>
+
+                    <Button
+                        android:layout_marginTop="30dp"
+                        android:id="@+id/btnbook"
+                        android:text="book"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FEDBD0">
+
+        <TextView
+            android:gravity="center_vertical"
+            android:id="@+id/vehicletype"
+            android:layout_width="60dp"
+            android:layout_height="180dp"
+            android:text="Vehicle type"
+            android:layout_marginStart="5dp"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/ttitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mr."
+                    android:textSize="15sp"
+                    android:layout_marginRight="5dp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/tname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Aashish"
+                    android:textSize="15sp"
+                    android:textStyle="italic" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/temail"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:text="syangtanaashish7@gmail.com"
+                    android:textSize="15sp"
+                    android:textStyle="italic" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tphone"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="9865036355"
+                    android:textSize="15sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="no. of person:-"
+                    android:layout_marginEnd="5dp"
+                    android:textSize="15sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/tnoofperson"
+                    android:layout_weight="0.5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="112"
+                    android:textSize="15sp"
+                    android:textStyle="italic" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="no. of Vehicle:-"
+                    android:layout_marginEnd="5dp"
+                    android:textSize="15sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/tnoofvehicle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="112"
+                    android:textSize="15sp"
+                    android:textStyle="italic" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:text="from :- "
+                    android:textSize="15sp"
+                    android:textStyle="italic" />
+
+
+                <TextView
+                    android:id="@+id/tripdatefrom"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:text="datefrom"
+                    android:textSize="15sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:text="To :- "
+                    android:textSize="15sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/tripdateto"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:text="dateto"
+                    android:textSize="15sp"
+                    android:textStyle="italic" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Comments:-"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tcomment"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="comments"
+                    android:textSize="15sp"
+                    android:textStyle="italic" />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/teditupdate"
+                android:layout_width="25dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:background="#FEDBD0"
+                android:src="@android:drawable/ic_menu_edit" />
+
+            <ImageButton
+                android:id="@+id/tdelete"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginTop="30dp"
+                android:background="#FEDBD0"
+                android:src="@android:drawable/ic_delete" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
