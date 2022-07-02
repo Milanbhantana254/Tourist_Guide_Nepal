@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "854497079898",
-    "project_id": "myproject-5d28d",
-    "storage_bucket": "myproject-5d28d.appspot.com"
+    "project_number": "468952658057",
+    "project_id": "crimereporting-9a3c2",
+    "storage_bucket": "crimereporting-9a3c2.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:854497079898:android:9ea7d5e06f2eed29b0de63",
+        "mobilesdk_app_id": "1:468952658057:android:4f264f1afc53cc42f65658",
         "android_client_info": {
           "package_name": "com.example.tour_guide_nepal"
         }
       },
       "oauth_client": [
         {
-          "client_id": "854497079898-auhj1ogp3ngvscjg6osu9f7kabucpgmr.apps.googleusercontent.com",
+          "client_id": "468952658057-q1785stqvk3qhu6aum46d6csfcts9di1.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAQWiOAQi4Mr2UGzKpHBIhRKoJ5thwX5KQ"
+          "current_key": "AIzaSyADOLaRzoYSavhQjKxROVOiolTYE9rmvSw"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "854497079898-auhj1ogp3ngvscjg6osu9f7kabucpgmr.apps.googleusercontent.com",
+              "client_id": "468952658057-q1785stqvk3qhu6aum46d6csfcts9di1.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
