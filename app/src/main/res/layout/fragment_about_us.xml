@@ -262,7 +262,7 @@
                 <TextView
                     android:layout_gravity="center"
                     android:layout_marginTop="40dp"
-                    android:text="Team Encoders"
+                    android:text="Milan Bhantana"
                     android:fontFamily="cursive"
                     android:textStyle="bold"
                     android:textColor="@color/white"
