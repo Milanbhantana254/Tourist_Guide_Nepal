@@ -12,8 +12,7 @@ import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.example.tour_guide_nepal.ENTITY.VehicleRentEntity
 import com.example.tour_guide_nepal.R
-import com.example.tour_guide_nepal.Repository.HotelBookRepository
-import com.example.tour_guide_nepal.Repository.VehicleRentRepository
+
 import com.example.tour_guide_nepal.vehicle.Updatevehiclebooking_activity
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -86,7 +85,7 @@ class VehicleRentViewAdapter(
             builder.setMessage("Are you sure do you want to delete ${vehiclerentlist.vehicletype} ?")
             builder.setIcon(android.R.drawable.ic_delete)
             builder.setPositiveButton("Yes") {_,_ ->
-                deleterentvehicle(vehiclerentlist)
+
             }
             builder.setNegativeButton("No") {_,_ ->
                 Toast.makeText(context,"Cancelled", Toast.LENGTH_SHORT).show()
@@ -98,26 +97,7 @@ class VehicleRentViewAdapter(
 
     }
 
-    private fun deleterentvehicle(vehiclerentlist: VehicleRentEntity) {
-        CoroutineScope(Dispatchers.IO).launch {
-            try {
-                val vehicleRentRepository = VehicleRentRepository()
-                val response = vehicleRentRepository.deleteVehicleRent(vehiclerentlist._id!!)
-                if (response.success == true) {
-                    withContext(Dispatchers.Main) {
-                        Toast.makeText(context, "${vehiclerentlist.vehicletype} deleted successfully", Toast.LENGTH_SHORT).show()
 
-                        lstVehicleRentView.remove(vehiclerentlist)
-                        notifyDataSetChanged()
-                    }
-                }
-            } catch (ex: Exception) {
-                withContext(Dispatchers.Main) {
-                    Toast.makeText(context, "Error ${ex.localizedMessage}", Toast.LENGTH_SHORT).show()
-                }
-            }
-        }
-    }
 
     override fun getItemCount(): Int {
         return lstVehicleRentView.size

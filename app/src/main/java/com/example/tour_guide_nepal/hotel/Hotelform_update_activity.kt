@@ -6,7 +6,6 @@ import android.os.Bundle
 import android.widget.*
 import com.example.tour_guide_nepal.ENTITY.HotelBookDetails
 import com.example.tour_guide_nepal.R
-import com.example.tour_guide_nepal.Repository.HotelBookRepository
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -127,19 +126,6 @@ class Hotelform_update_activity : AppCompatActivity() {
             numberofpeople = guestno,
             comments = comments
         )
-        CoroutineScope(Dispatchers.IO).launch {
-            try {
-                val hotelBookRepository = HotelBookRepository()
-                val response = hotelBookRepository.updateBookHotel(intent?._id!!,hotelBookDetails)
-                if (response.message != null){
-                    withContext(Dispatchers.Main){
-                        Toast.makeText(this@Hotelform_update_activity, "updated successfully", Toast.LENGTH_SHORT).show()
-                    }
-                }
-            } catch (ex:Exception){
-                withContext(Dispatchers.Main){
-                }
-            }
-        }
+
     }
 }

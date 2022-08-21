@@ -9,9 +9,6 @@ import com.example.tour_guide_nepal.ENTITY.HotelBookDetails
 import com.example.tour_guide_nepal.ENTITY.Vehicle
 import com.example.tour_guide_nepal.ENTITY.VehicleRentEntity
 import com.example.tour_guide_nepal.R
-import com.example.tour_guide_nepal.Repository.HotelBookRepository
-import com.example.tour_guide_nepal.Repository.VehicleRentRepository
-import com.example.tour_guide_nepal.view.ui.DetailsActivity
 import com.google.firebase.database.FirebaseDatabase
 import com.michaelmuenzer.android.scrollablennumberpicker.ScrollableNumberPicker
 import kotlinx.coroutines.CoroutineScope
@@ -131,7 +128,7 @@ class Vehicle_booking_form_activity : AppCompatActivity() {
         val hireenddate = hireenddate.text.toString()
         val hirecomments = hirecomments.text.toString()
 
-        database1.child(title.toString()).setValue(VehicleRentEntity(title,hirename,hireemail,hirenumber,noofperson,vehicletype,noofvehicle,hirestartdate,hireenddate,hirecomments))
+        database1.child(hirename.toString()).setValue(VehicleRentEntity(title,hirename,hireemail,hirenumber,noofperson,vehicletype,noofvehicle,hirestartdate,hireenddate,hirecomments))
 
 
 //        val vehicleRentEntity = VehicleRentEntity(

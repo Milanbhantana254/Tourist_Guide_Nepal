@@ -8,7 +8,6 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 import com.example.tour_guide_nepal.R
-import com.example.tour_guide_nepal.Repository.VehicleRentRepository
 import com.example.tour_guide_nepal.adapter.VehicleRentViewAdapter
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -34,26 +33,7 @@ class ViewVehicleRent : AppCompatActivity() {
     }
 
     private fun loadvehiclerent() {
-        CoroutineScope(Dispatchers.IO).launch {
-            try {
-                val vehicleRentRepository = VehicleRentRepository()
-                val response = vehicleRentRepository.getallvehiclerent()
-                if (response.data != null) {
 
-                    val lstrentdetails = response.data
-                    withContext(Dispatchers.Main) {
-                        val adapter = VehicleRentViewAdapter(this@ViewVehicleRent,lstrentdetails)
-                        recyclerview.layoutManager = LinearLayoutManager(this@ViewVehicleRent)
-                        recyclerview.adapter=adapter
-                    }
-                }
-            } catch (ex: Exception) {
-                withContext(Dispatchers.Main) {
-                    Toast.makeText(this@ViewVehicleRent,
-                        "Error", Toast.LENGTH_SHORT).show()
-                }
-            }
-        }
     }
 
     private fun refreshapp() {

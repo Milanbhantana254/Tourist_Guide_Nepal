@@ -5,9 +5,6 @@ import com.example.tour_guide_nepal.API.ServiceBuilder
 import com.example.tour_guide_nepal.ENTITY.HotelBookDetails
 import com.example.tour_guide_nepal.ENTITY.User
 import com.example.tour_guide_nepal.ENTITY.VehicleRentEntity
-import com.example.tour_guide_nepal.Repository.HotelBookRepository
-import com.example.tour_guide_nepal.Repository.UserRepository
-import com.example.tour_guide_nepal.Repository.VehicleRentRepository
 import kotlinx.coroutines.runBlocking
 import org.junit.Assert
 import org.junit.Test

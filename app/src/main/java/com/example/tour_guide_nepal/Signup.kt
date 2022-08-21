@@ -9,8 +9,7 @@ import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.example.tour_guide_nepal.ENTITY.User
-import com.example.tour_guide_nepal.Repository.UserRepository
+
  
 import com.example.tour_guide_nepal.termsandservices.front_terms_and_services
 

@@ -13,7 +13,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.tour_guide_nepal.ENTITY.HotelBookDetails
 import com.example.tour_guide_nepal.hotel.Hotelform_update_activity
 import com.example.tour_guide_nepal.R
-import com.example.tour_guide_nepal.Repository.HotelBookRepository
+
 import com.example.tour_guide_nepal.hotel.HotelBookingInfo
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -84,7 +84,7 @@ class HotelBookViewAdapter(
             builder.setMessage("Are you sure do you want to delete ${hotelbooklist.hotelname} ?")
             builder.setIcon(android.R.drawable.ic_delete)
             builder.setPositiveButton("Yes") {_,_ ->
-                deleteHotebook(hotelbooklist)
+
             }
             builder.setNegativeButton("No") {_,_ ->
                 Toast.makeText(context,"Cancelled", Toast.LENGTH_SHORT).show()
@@ -97,27 +97,7 @@ class HotelBookViewAdapter(
 
     }
 
-    private fun deleteHotebook(hotelbooklist: HotelBookDetails) {
-        CoroutineScope(Dispatchers.IO).launch {
-            try {
-                val hotelBookRepository = HotelBookRepository()
-                val response = hotelBookRepository.deletebookHotel(hotelbooklist._id!!)
-                if (response.success == true) {
-                    withContext(Dispatchers.Main) {
-                        Toast.makeText(context, "${hotelbooklist.hotelname} deleted successfully", Toast.LENGTH_SHORT).show()
 
-                        lstHotelBookView.remove(hotelbooklist)
-                        notifyDataSetChanged()
-                    }
-                }
-            } catch (ex:Exception) {
-                withContext(Dispatchers.Main) {
-                    Toast.makeText(context, "Error ${ex.localizedMessage}", Toast.LENGTH_SHORT).show()
-                }
-            }
-        }
-
-    }
 
     override fun getItemCount(): Int {
         return lstHotelBookView.size

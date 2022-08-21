@@ -7,7 +7,7 @@ import android.os.Bundle
 import android.widget.*
 import com.example.tour_guide_nepal.ENTITY.VehicleRentEntity
 import com.example.tour_guide_nepal.R
-import com.example.tour_guide_nepal.Repository.VehicleRentRepository
+
 import com.example.tour_guide_nepal.view.ui.DetailsActivity
 import com.michaelmuenzer.android.scrollablennumberpicker.ScrollableNumberPicker
 import kotlinx.coroutines.CoroutineScope
@@ -140,20 +140,6 @@ class Updatevehiclebooking_activity : AppCompatActivity() {
             tripenddate= tripenddate,
             traveldetail= traveldetail
         )
-        CoroutineScope(Dispatchers.IO).launch {
-            try {
-                val vehicleRentRepository = VehicleRentRepository()
-                val response = vehicleRentRepository.updateVehicleRent(intent?._id!!,vehicleRentEntity)
-                if (response.message != null){
-                    withContext(Dispatchers.Main){
-                        Toast.makeText(this@Updatevehiclebooking_activity, "updated successfully", Toast.LENGTH_SHORT).show()
-                    startActivity(Intent(this@Updatevehiclebooking_activity,ViewVehicleRent::class.java))
-                    }
-                }
-            } catch (ex:Exception){
-                withContext(Dispatchers.Main){
-                }
-            }
-        }
+
     }
 }
