@@ -142,46 +142,47 @@ class Signup : AppCompatActivity() {
                     etpass.error = "Password does not match"
                     etpass.requestFocus()
                     return@setOnClickListener
-                } else {
-                    val user =
-                        User(
-
-                            fullname = FullName,
- 
-                            email = email,
- 
-                            phone = phone,
-                            password = password
-                        )
-                    CoroutineScope(Dispatchers.IO).launch {
-                        try {
-                            val userRepository = UserRepository()
-                            val response = userRepository.registerUser(user)
-                            if (response.success == true) {
-                                withContext(Dispatchers.Main) {
-                                    Toast.makeText(
-                                        this@Signup,
-                                        "signup successfully", Toast.LENGTH_SHORT
-
-                                    ).show()
-                                    getSharedPreferences(
-                                        "shared_preference",
-                                        Context.MODE_PRIVATE
-                                    ).edit().putBoolean("isLoggedIn", true).apply()
-                                }
-                            }
-                        } catch (ex: Exception) {
-                            withContext(Dispatchers.Main) {
-                                Toast.makeText(
-                                    this@Signup,
-                                    ex.message, Toast.LENGTH_SHORT
-                                ).show()
-                            }
-                        }
-                    }
-
-
                 }
+//                else {
+//                    val user =
+//                        User(
+//
+//                            fullname = FullName,
+//
+//                            email = email,
+//
+//                            phone = phone,
+//                            password = password
+//                        )
+//                    CoroutineScope(Dispatchers.IO).launch {
+//                        try {
+//                            val userRepository = UserRepository()
+//                            val response = userRepository.registerUser(user)
+//                            if (response.success == true) {
+//                                withContext(Dispatchers.Main) {
+//                                    Toast.makeText(
+//                                        this@Signup,
+//                                        "signup successfully", Toast.LENGTH_SHORT
+//
+//                                    ).show()
+//                                    getSharedPreferences(
+//                                        "shared_preference",
+//                                        Context.MODE_PRIVATE
+//                                    ).edit().putBoolean("isLoggedIn", true).apply()
+//                                }
+//                            }
+//                        } catch (ex: Exception) {
+//                            withContext(Dispatchers.Main) {
+//                                Toast.makeText(
+//                                    this@Signup,
+//                                    ex.message, Toast.LENGTH_SHORT
+//                                ).show()
+//                            }
+//                        }
+//                    }
+//
+//
+//                }
             }
 
 

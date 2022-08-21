@@ -1,9 +1,10 @@
 <component name="libraryTable">
   <library name="Gradle: com.google.android.gms:play-services-flags:16.0.1@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/StudioProjects/Android-Firebase-Crime-Report-Missing-person-Alart/caches/transforms-2/files-2.1/6fdb51a58e49deeeeb5e15de54edbf1a/jetified-play-services-flags-16.0.1/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/StudioProjects/Android-Firebase-Crime-Report-Missing-person-Alart/caches/transforms-2/files-2.1/6fdb51a58e49deeeeb5e15de54edbf1a/jetified-play-services-flags-16.0.1/res" />
-      <root url="file://$USER_HOME$/StudioProjects/Android-Firebase-Crime-Report-Missing-person-Alart/caches/transforms-2/files-2.1/6fdb51a58e49deeeeb5e15de54edbf1a/jetified-play-services-flags-16.0.1/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/../Android-Firebase-Crime-Report-Missing-person-Alart/caches/transforms-2/files-2.1/6fdb51a58e49deeeeb5e15de54edbf1a/jetified-play-services-flags-16.0.1/res" />
+      <root url="file://$PROJECT_DIR$/../Android-Firebase-Crime-Report-Missing-person-Alart/caches/transforms-2/files-2.1/a3d0bed56bc000c5c3fb1672920e6588/jetified-play-services-flags-16.0.1/res" />
+      <root url="file://$PROJECT_DIR$/../Android-Firebase-Crime-Report-Missing-person-Alart/caches/transforms-2/files-2.1/a3d0bed56bc000c5c3fb1672920e6588/jetified-play-services-flags-16.0.1/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../Android-Firebase-Crime-Report-Missing-person-Alart/caches/transforms-2/files-2.1/a3d0bed56bc000c5c3fb1672920e6588/jetified-play-services-flags-16.0.1/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

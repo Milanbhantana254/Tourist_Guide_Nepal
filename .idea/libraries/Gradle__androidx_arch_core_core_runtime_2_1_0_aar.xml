@@ -1,13 +1,14 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.arch.core:core-runtime:2.1.0@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/StudioProjects/Android-Firebase-Crime-Report-Missing-person-Alart/caches/transforms-2/files-2.1/cd7bdd151157de642ddb6050403427f6/core-runtime-2.1.0/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/StudioProjects/Android-Firebase-Crime-Report-Missing-person-Alart/caches/transforms-2/files-2.1/cd7bdd151157de642ddb6050403427f6/core-runtime-2.1.0/res" />
-      <root url="file://$USER_HOME$/StudioProjects/Android-Firebase-Crime-Report-Missing-person-Alart/caches/transforms-2/files-2.1/cd7bdd151157de642ddb6050403427f6/core-runtime-2.1.0/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/../Android-Firebase-Crime-Report-Missing-person-Alart/caches/transforms-2/files-2.1/cd7bdd151157de642ddb6050403427f6/core-runtime-2.1.0/res" />
+      <root url="jar://$PROJECT_DIR$/../Android-Firebase-Crime-Report-Missing-person-Alart/caches/transforms-2/files-2.1/46a070f8810b5a614399045564d7d8a3/core-runtime-2.1.0/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../Android-Firebase-Crime-Report-Missing-person-Alart/caches/transforms-2/files-2.1/46a070f8810b5a614399045564d7d8a3/core-runtime-2.1.0/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/../Android-Firebase-Crime-Report-Missing-person-Alart/caches/transforms-2/files-2.1/46a070f8810b5a614399045564d7d8a3/core-runtime-2.1.0/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
-      <root url="jar://$USER_HOME$/StudioProjects/Android-Firebase-Crime-Report-Missing-person-Alart/caches/modules-2/files-2.1/androidx.arch.core/core-runtime/2.1.0/f19886651c9946b39f83d8c184fd0e2ce9f43c16/core-runtime-2.1.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Android-Firebase-Crime-Report-Missing-person-Alart/caches/modules-2/files-2.1/androidx.arch.core/core-runtime/2.1.0/f19886651c9946b39f83d8c184fd0e2ce9f43c16/core-runtime-2.1.0-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

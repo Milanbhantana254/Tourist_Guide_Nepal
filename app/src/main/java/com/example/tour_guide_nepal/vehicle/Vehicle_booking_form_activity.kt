@@ -6,11 +6,13 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.*
 import com.example.tour_guide_nepal.ENTITY.HotelBookDetails
+import com.example.tour_guide_nepal.ENTITY.Vehicle
 import com.example.tour_guide_nepal.ENTITY.VehicleRentEntity
 import com.example.tour_guide_nepal.R
 import com.example.tour_guide_nepal.Repository.HotelBookRepository
 import com.example.tour_guide_nepal.Repository.VehicleRentRepository
 import com.example.tour_guide_nepal.view.ui.DetailsActivity
+import com.google.firebase.database.FirebaseDatabase
 import com.michaelmuenzer.android.scrollablennumberpicker.ScrollableNumberPicker
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -116,7 +118,7 @@ class Vehicle_booking_form_activity : AppCompatActivity() {
 
         }
     }
-
+    var database1 = FirebaseDatabase.getInstance().reference
     private fun rentvehicle() {
         val title = spinner1.selectedItem.toString()
         val hirename = hirename.text.toString()
@@ -129,44 +131,47 @@ class Vehicle_booking_form_activity : AppCompatActivity() {
         val hireenddate = hireenddate.text.toString()
         val hirecomments = hirecomments.text.toString()
 
-        val vehicleRentEntity = VehicleRentEntity(
-            title=title,
-            fullname= hirename,
-            email = hireemail,
-            phone = hirenumber,
-            numberofpeople = noofperson,
-            vehicletype = vehicletype,
-            numberofvehicle = noofvehicle,
-            tripstartdate = hirestartdate,
-            tripenddate = hireenddate,
-            traveldetail = hirecomments
-        )
-        CoroutineScope(Dispatchers.IO).launch {
-            try {
-                val vehicleRentRepository = VehicleRentRepository()
-                val response = vehicleRentRepository.rentvehicle(vehicleRentEntity)
+        database1.child(title.toString()).setValue(VehicleRentEntity(title,hirename,hireemail,hirenumber,noofperson,vehicletype,noofvehicle,hirestartdate,hireenddate,hirecomments))
 
-                if (response.success == true) {
-                    withContext(Dispatchers.Main) {
-                        Toast.makeText(
-                            this@Vehicle_booking_form_activity,
-                            "Vehicle Rent Successfully",
-                            Toast.LENGTH_SHORT
-                        ).show()
 
-                        startActivity(Intent(this@Vehicle_booking_form_activity,ViewVehicleRent::class.java))
-                    }
-                }
-            } catch (ex: Exception) {
-                withContext(Dispatchers.Main) {
-                    Toast.makeText(
-                        this@Vehicle_booking_form_activity,
-                        "Error ${ex.localizedMessage}",
-                        Toast.LENGTH_SHORT
-                    ).show()
-
-                }
-            }
-        }
+//        val vehicleRentEntity = VehicleRentEntity(
+//            title=title,
+//            fullname= hirename,
+//            email = hireemail,
+//            phone = hirenumber,
+//            numberofpeople = noofperson,
+//            vehicletype = vehicletype,
+//            numberofvehicle = noofvehicle,
+//            tripstartdate = hirestartdate,
+//            tripenddate = hireenddate,
+//            traveldetail = hirecomments
+//        )
+//        CoroutineScope(Dispatchers.IO).launch {
+//            try {
+//                val vehicleRentRepository = VehicleRentRepository()
+//                val response = vehicleRentRepository.rentvehicle(vehicleRentEntity)
+//
+//                if (response.success == true) {
+//                    withContext(Dispatchers.Main) {
+//                        Toast.makeText(
+//                            this@Vehicle_booking_form_activity,
+//                            "Vehicle Rent Successfully",
+//                            Toast.LENGTH_SHORT
+//                        ).show()
+//
+//                        startActivity(Intent(this@Vehicle_booking_form_activity,ViewVehicleRent::class.java))
+//                    }
+//                }
+//            } catch (ex: Exception) {
+//                withContext(Dispatchers.Main) {
+//                    Toast.makeText(
+//                        this@Vehicle_booking_form_activity,
+//                        "Error ${ex.localizedMessage}",
+//                        Toast.LENGTH_SHORT
+//                    ).show()
+//
+//                }
+//            }
+//        }
     }
 }

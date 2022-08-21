@@ -1,9 +1,10 @@
 <component name="libraryTable">
   <library name="Gradle: com.google.android.gms:play-services-auth-base:17.0.0@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/StudioProjects/Android-Firebase-Crime-Report-Missing-person-Alart/caches/transforms-2/files-2.1/493477df5cea2d9404f8c3504f3004f3/jetified-play-services-auth-base-17.0.0/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/StudioProjects/Android-Firebase-Crime-Report-Missing-person-Alart/caches/transforms-2/files-2.1/493477df5cea2d9404f8c3504f3004f3/jetified-play-services-auth-base-17.0.0/res" />
-      <root url="file://$USER_HOME$/StudioProjects/Android-Firebase-Crime-Report-Missing-person-Alart/caches/transforms-2/files-2.1/493477df5cea2d9404f8c3504f3004f3/jetified-play-services-auth-base-17.0.0/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/../Android-Firebase-Crime-Report-Missing-person-Alart/caches/transforms-2/files-2.1/493477df5cea2d9404f8c3504f3004f3/jetified-play-services-auth-base-17.0.0/res" />
+      <root url="file://$PROJECT_DIR$/../Android-Firebase-Crime-Report-Missing-person-Alart/caches/transforms-2/files-2.1/f4e532310d4f3d95a288ada3ca1b872e/jetified-play-services-auth-base-17.0.0/res" />
+      <root url="jar://$PROJECT_DIR$/../Android-Firebase-Crime-Report-Missing-person-Alart/caches/transforms-2/files-2.1/f4e532310d4f3d95a288ada3ca1b872e/jetified-play-services-auth-base-17.0.0/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../Android-Firebase-Crime-Report-Missing-person-Alart/caches/transforms-2/files-2.1/f4e532310d4f3d95a288ada3ca1b872e/jetified-play-services-auth-base-17.0.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

@@ -1,15 +1,18 @@
 <component name="libraryTable">
   <library name="Gradle: com.michaelmuenzer.android:ScrollableNumberPicker:0.2.2@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/StudioProjects/Android-Firebase-Crime-Report-Missing-person-Alart/caches/transforms-2/files-2.1/c2526e218235426783c3437026ae5e3b/jetified-ScrollableNumberPicker-0.2.2/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/StudioProjects/Android-Firebase-Crime-Report-Missing-person-Alart/caches/transforms-2/files-2.1/c2526e218235426783c3437026ae5e3b/jetified-ScrollableNumberPicker-0.2.2/res" />
-      <root url="file://$USER_HOME$/StudioProjects/Android-Firebase-Crime-Report-Missing-person-Alart/caches/transforms-2/files-2.1/c2526e218235426783c3437026ae5e3b/jetified-ScrollableNumberPicker-0.2.2/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../Android-Firebase-Crime-Report-Missing-person-Alart/caches/transforms-2/files-2.1/c2526e218235426783c3437026ae5e3b/jetified-ScrollableNumberPicker-0.2.2/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../Android-Firebase-Crime-Report-Missing-person-Alart/caches/transforms-2/files-2.1/c2526e218235426783c3437026ae5e3b/jetified-ScrollableNumberPicker-0.2.2/res" />
+      <root url="file://$PROJECT_DIR$/../Android-Firebase-Crime-Report-Missing-person-Alart/caches/transforms-2/files-2.1/c2526e218235426783c3437026ae5e3b/jetified-ScrollableNumberPicker-0.2.2/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/../Android-Firebase-Crime-Report-Missing-person-Alart/caches/transforms-2/files-2.1/f18b199ba9889dc23149bc019380fa5f/jetified-ScrollableNumberPicker-0.2.2/res" />
+      <root url="file://$PROJECT_DIR$/../Android-Firebase-Crime-Report-Missing-person-Alart/caches/transforms-2/files-2.1/f18b199ba9889dc23149bc019380fa5f/jetified-ScrollableNumberPicker-0.2.2/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../Android-Firebase-Crime-Report-Missing-person-Alart/caches/transforms-2/files-2.1/f18b199ba9889dc23149bc019380fa5f/jetified-ScrollableNumberPicker-0.2.2/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$USER_HOME$/StudioProjects/Android-Firebase-Crime-Report-Missing-person-Alart/caches/modules-2/files-2.1/com.michaelmuenzer.android/ScrollableNumberPicker/0.2.2/17df1b3f328d387bf413f35a973c77f777d645e5/ScrollableNumberPicker-0.2.2-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Android-Firebase-Crime-Report-Missing-person-Alart/caches/modules-2/files-2.1/com.michaelmuenzer.android/ScrollableNumberPicker/0.2.2/17df1b3f328d387bf413f35a973c77f777d645e5/ScrollableNumberPicker-0.2.2-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$USER_HOME$/StudioProjects/Android-Firebase-Crime-Report-Missing-person-Alart/caches/modules-2/files-2.1/com.michaelmuenzer.android/ScrollableNumberPicker/0.2.2/58c1d61f137bfdeaaba6e5314844bfb68b10b232/ScrollableNumberPicker-0.2.2-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Android-Firebase-Crime-Report-Missing-person-Alart/caches/modules-2/files-2.1/com.michaelmuenzer.android/ScrollableNumberPicker/0.2.2/58c1d61f137bfdeaaba6e5314844bfb68b10b232/ScrollableNumberPicker-0.2.2-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

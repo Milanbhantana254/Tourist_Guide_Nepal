@@ -1,9 +1,10 @@
 <component name="libraryTable">
   <library name="Gradle: com.google.android.gms:play-services-stats:17.0.0@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/StudioProjects/Android-Firebase-Crime-Report-Missing-person-Alart/caches/transforms-2/files-2.1/d088791f4b0cf0e25f7b119dfb5a8118/jetified-play-services-stats-17.0.0/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/StudioProjects/Android-Firebase-Crime-Report-Missing-person-Alart/caches/transforms-2/files-2.1/d088791f4b0cf0e25f7b119dfb5a8118/jetified-play-services-stats-17.0.0/res" />
-      <root url="file://$USER_HOME$/StudioProjects/Android-Firebase-Crime-Report-Missing-person-Alart/caches/transforms-2/files-2.1/d088791f4b0cf0e25f7b119dfb5a8118/jetified-play-services-stats-17.0.0/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/../Android-Firebase-Crime-Report-Missing-person-Alart/caches/transforms-2/files-2.1/d088791f4b0cf0e25f7b119dfb5a8118/jetified-play-services-stats-17.0.0/res" />
+      <root url="file://$PROJECT_DIR$/../Android-Firebase-Crime-Report-Missing-person-Alart/caches/transforms-2/files-2.1/d06f3e5ac3ef38e2c49dabd9f8c2cc65/jetified-play-services-stats-17.0.0/res" />
+      <root url="jar://$PROJECT_DIR$/../Android-Firebase-Crime-Report-Missing-person-Alart/caches/transforms-2/files-2.1/d06f3e5ac3ef38e2c49dabd9f8c2cc65/jetified-play-services-stats-17.0.0/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../Android-Firebase-Crime-Report-Missing-person-Alart/caches/transforms-2/files-2.1/d06f3e5ac3ef38e2c49dabd9f8c2cc65/jetified-play-services-stats-17.0.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

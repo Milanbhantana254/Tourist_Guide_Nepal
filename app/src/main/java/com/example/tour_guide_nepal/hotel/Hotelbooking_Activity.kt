@@ -11,6 +11,7 @@ import com.example.tour_guide_nepal.ENTITY.HotelBookDetails
 import com.example.tour_guide_nepal.R
 import com.example.tour_guide_nepal.Repository.HotelBookRepository
 import com.example.tour_guide_nepal.notification.NotificationChannels
+import com.google.firebase.database.FirebaseDatabase
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -50,6 +51,7 @@ class Hotelbooking_Activity : AppCompatActivity() {
 
         val adapter = ArrayAdapter(this,android.R.layout.simple_list_item_1,type_of_room)
         roomtype.adapter = adapter
+
 
         //calendar
         val c = Calendar.getInstance()
@@ -99,8 +101,9 @@ class Hotelbooking_Activity : AppCompatActivity() {
             hotelBook()
         }
     }
-
+    var database = FirebaseDatabase.getInstance().reference
     private fun hotelBook() {
+
         val fullname = etfullname.text.toString()
         val email = etemail.text.toString()
         val phnumber = etphonenumber.text.toString()
@@ -110,44 +113,47 @@ class Hotelbooking_Activity : AppCompatActivity() {
         val dateto = dateto.text.toString()
         val guestno = etguestnumber.text.toString()
         val comments = comments.text.toString()
+        hotelbooknotification()
 
-        val hotelBookDetails = HotelBookDetails(
-            fullname = fullname,
-            email = email,
-            phone = phnumber,
-            hotelname = hotelname,
-            roomtype = roomtype,
-            datefrom = datefrom,
-            dateto = dateto,
-            numberofpeople = guestno,
-            comments = comments
-        )
-        CoroutineScope(Dispatchers.IO).launch {
-            try {
-                val hotelBookRepository = HotelBookRepository()
-                val response = hotelBookRepository.bookHotel(hotelBookDetails)
-
-                if (response.success == true) {
-                    withContext(Dispatchers.Main) {
-                        Toast.makeText(
-                            this@Hotelbooking_Activity,
-                            "Hotel Booked Successfully",
-                            Toast.LENGTH_SHORT
-                        ).show()
-                        hotelbooknotification()
-                    }
-                }
-            } catch (ex: Exception) {
-                withContext(Dispatchers.Main) {
-                    Toast.makeText(
-                        this@Hotelbooking_Activity,
-                        "Error ${ex.localizedMessage}",
-                        Toast.LENGTH_SHORT
-                    ).show()
-
-                }
-            }
-        }
+        database.child(fullname.toString()).setValue(HotelBookDetails(fullname,email,phnumber,hotelname,roomtype,datefrom,dateto,guestno,comments))
+        println("printko value" + database);
+//        val hotelBookDetails = HotelBookDetails(
+//            fullname = fullname,
+//            email = email,
+//            phone = phnumber,
+//            hotelname = hotelname,
+//            roomtype = roomtype,
+//            datefrom = datefrom,
+//            dateto = dateto,
+//            numberofpeople = guestno,
+//            comments = comments
+//        )
+//        CoroutineScope(Dispatchers.IO).launch {
+//            try {
+//                val hotelBookRepository = HotelBookRepository()
+//                val response = hotelBookRepository.bookHotel(hotelBookDetails)
+//
+//                if (response.success == true) {
+//                    withContext(Dispatchers.Main) {
+//                        Toast.makeText(
+//                            this@Hotelbooking_Activity,
+//                            "Hotel Booked Successfully",
+//                            Toast.LENGTH_SHORT
+//                        ).show()
+//                        hotelbooknotification()
+//                    }
+//                }
+//            } catch (ex: Exception) {
+//                withContext(Dispatchers.Main) {
+//                    Toast.makeText(
+//                        this@Hotelbooking_Activity,
+//                        "Error ${ex.localizedMessage}",
+//                        Toast.LENGTH_SHORT
+//                    ).show()
+//
+//                }
+//            }
+//        }
     }
 
     private fun hotelbooknotification() {

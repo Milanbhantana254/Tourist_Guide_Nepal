@@ -121,54 +121,54 @@ class LoginActivity : AppCompatActivity() {
 
 
 
-
-            CoroutineScope(Dispatchers.IO).launch {
-                try {
-                    val repository = UserRepository()
-                    val response = repository.loginUser(email, password)
-                    if (response.success == true) {
-                        ServiceBuilder.token = "Bearer " + response.token
-
-                        savepref()
-
-                        startActivity(
-                            Intent(
-                                this@LoginActivity,
-                                MainActivity::class.java
-                            )
-                        )
-                        withContext(Dispatchers.Main) {
-                            Toast.makeText(
-                                this@LoginActivity,
-                                "Login Successfully",
-                                Toast.LENGTH_SHORT
-                            ).show()
-                        }
-                        finish()
-                    } else {
-                        withContext(Dispatchers.Main) {
-                            val snack =
-                                Snackbar.make(
-                                    linearLayout,
-                                    "Invalid credentials",
-                                    Snackbar.LENGTH_LONG
-                                )
-                            snack.setAction("OK", View.OnClickListener {
-                                snack.dismiss()
-                            })
-                            snack.show()
-                        }
-                    }
-
-                } catch (ex: Exception) {
-                    withContext(Dispatchers.Main) {
-                        Toast.makeText(
-                            this@LoginActivity,
-                            ex.message, Toast.LENGTH_SHORT
-                        ).show()
-                    }
-                }
-            }
+//
+//            CoroutineScope(Dispatchers.IO).launch {
+//                try {
+//                    val repository = UserRepository()
+//                    val response = repository.loginUser(email, password)
+//                    if (response.success == true) {
+//                        ServiceBuilder.token = "Bearer " + response.token
+//
+//                        savepref()
+//
+//                        startActivity(
+//                            Intent(
+//                                this@LoginActivity,
+//                                MainActivity::class.java
+//                            )
+//                        )
+//                        withContext(Dispatchers.Main) {
+//                            Toast.makeText(
+//                                this@LoginActivity,
+//                                "Login Successfully",
+//                                Toast.LENGTH_SHORT
+//                            ).show()
+//                        }
+//                        finish()
+//                    } else {
+//                        withContext(Dispatchers.Main) {
+//                            val snack =
+//                                Snackbar.make(
+//                                    linearLayout,
+//                                    "Invalid credentials",
+//                                    Snackbar.LENGTH_LONG
+//                                )
+//                            snack.setAction("OK", View.OnClickListener {
+//                                snack.dismiss()
+//                            })
+//                            snack.show()
+//                        }
+//                    }
+//
+//                } catch (ex: Exception) {
+//                    withContext(Dispatchers.Main) {
+//                        Toast.makeText(
+//                            this@LoginActivity,
+//                            ex.message, Toast.LENGTH_SHORT
+//                        ).show()
+//                    }
+//                }
+//            }
 
         }
 

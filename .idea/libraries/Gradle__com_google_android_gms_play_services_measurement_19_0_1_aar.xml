@@ -1,12 +1,13 @@
 <component name="libraryTable">
   <library name="Gradle: com.google.android.gms:play-services-measurement:19.0.1@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/StudioProjects/Android-Firebase-Crime-Report-Missing-person-Alart/caches/transforms-2/files-2.1/262ecd249d2aeed6946c91f98c1392ba/jetified-play-services-measurement-19.0.1/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/StudioProjects/Android-Firebase-Crime-Report-Missing-person-Alart/caches/transforms-2/files-2.1/262ecd249d2aeed6946c91f98c1392ba/jetified-play-services-measurement-19.0.1/res" />
-      <root url="file://$USER_HOME$/StudioProjects/Android-Firebase-Crime-Report-Missing-person-Alart/caches/transforms-2/files-2.1/262ecd249d2aeed6946c91f98c1392ba/jetified-play-services-measurement-19.0.1/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/../Android-Firebase-Crime-Report-Missing-person-Alart/caches/transforms-2/files-2.1/262ecd249d2aeed6946c91f98c1392ba/jetified-play-services-measurement-19.0.1/res" />
+      <root url="file://$PROJECT_DIR$/../Android-Firebase-Crime-Report-Missing-person-Alart/caches/transforms-2/files-2.1/ca261105d97b3e8bcabf6755b92dd043/jetified-play-services-measurement-19.0.1/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../Android-Firebase-Crime-Report-Missing-person-Alart/caches/transforms-2/files-2.1/ca261105d97b3e8bcabf6755b92dd043/jetified-play-services-measurement-19.0.1/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../Android-Firebase-Crime-Report-Missing-person-Alart/caches/transforms-2/files-2.1/ca261105d97b3e8bcabf6755b92dd043/jetified-play-services-measurement-19.0.1/res" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$USER_HOME$/StudioProjects/Android-Firebase-Crime-Report-Missing-person-Alart/caches/modules-2/files-2.1/com.google.android.gms/play-services-measurement/19.0.1/8e281188211fceacc9a6380f19afe9cdf7bbfc67/play-services-measurement-19.0.1-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Android-Firebase-Crime-Report-Missing-person-Alart/caches/modules-2/files-2.1/com.google.android.gms/play-services-measurement/19.0.1/8e281188211fceacc9a6380f19afe9cdf7bbfc67/play-services-measurement-19.0.1-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES />
   </library>

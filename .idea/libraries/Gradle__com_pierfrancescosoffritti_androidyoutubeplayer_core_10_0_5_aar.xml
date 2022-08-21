@@ -1,15 +1,15 @@
 <component name="libraryTable">
   <library name="Gradle: com.pierfrancescosoffritti.androidyoutubeplayer:core:10.0.5@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/StudioProjects/Android-Firebase-Crime-Report-Missing-person-Alart/caches/transforms-2/files-2.1/fd21aa408f885342bcb65d7cf061bbdf/jetified-core-10.0.5/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/StudioProjects/Android-Firebase-Crime-Report-Missing-person-Alart/caches/transforms-2/files-2.1/fd21aa408f885342bcb65d7cf061bbdf/jetified-core-10.0.5/res" />
-      <root url="file://$USER_HOME$/StudioProjects/Android-Firebase-Crime-Report-Missing-person-Alart/caches/transforms-2/files-2.1/fd21aa408f885342bcb65d7cf061bbdf/jetified-core-10.0.5/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/../Android-Firebase-Crime-Report-Missing-person-Alart/caches/transforms-2/files-2.1/65bc8efd1a5884378427113bfe819b8b/jetified-core-10.0.5/res" />
+      <root url="jar://$PROJECT_DIR$/../Android-Firebase-Crime-Report-Missing-person-Alart/caches/transforms-2/files-2.1/65bc8efd1a5884378427113bfe819b8b/jetified-core-10.0.5/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../Android-Firebase-Crime-Report-Missing-person-Alart/caches/transforms-2/files-2.1/65bc8efd1a5884378427113bfe819b8b/jetified-core-10.0.5/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$USER_HOME$/StudioProjects/Android-Firebase-Crime-Report-Missing-person-Alart/caches/modules-2/files-2.1/com.pierfrancescosoffritti.androidyoutubeplayer/core/10.0.5/137a7c4ba8f0e25e996737a17cd1953c1380f72b/core-10.0.5-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Android-Firebase-Crime-Report-Missing-person-Alart/caches/modules-2/files-2.1/com.pierfrancescosoffritti.androidyoutubeplayer/core/10.0.5/137a7c4ba8f0e25e996737a17cd1953c1380f72b/core-10.0.5-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$USER_HOME$/StudioProjects/Android-Firebase-Crime-Report-Missing-person-Alart/caches/modules-2/files-2.1/com.pierfrancescosoffritti.androidyoutubeplayer/core/10.0.5/5fdb51ce5dce99605ead027ff7bd3e8e2f12e3e4/core-10.0.5-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Android-Firebase-Crime-Report-Missing-person-Alart/caches/modules-2/files-2.1/com.pierfrancescosoffritti.androidyoutubeplayer/core/10.0.5/5fdb51ce5dce99605ead027ff7bd3e8e2f12e3e4/core-10.0.5-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

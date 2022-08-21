@@ -1,12 +1,13 @@
 <component name="libraryTable">
   <library name="Gradle: com.google.android.gms:play-services-measurement-impl:19.0.1@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/StudioProjects/Android-Firebase-Crime-Report-Missing-person-Alart/caches/transforms-2/files-2.1/aecbb9edb7ace2c4ba3ad8f9df051adb/jetified-play-services-measurement-impl-19.0.1/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/StudioProjects/Android-Firebase-Crime-Report-Missing-person-Alart/caches/transforms-2/files-2.1/aecbb9edb7ace2c4ba3ad8f9df051adb/jetified-play-services-measurement-impl-19.0.1/res" />
-      <root url="file://$USER_HOME$/StudioProjects/Android-Firebase-Crime-Report-Missing-person-Alart/caches/transforms-2/files-2.1/aecbb9edb7ace2c4ba3ad8f9df051adb/jetified-play-services-measurement-impl-19.0.1/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/../Android-Firebase-Crime-Report-Missing-person-Alart/caches/transforms-2/files-2.1/aecbb9edb7ace2c4ba3ad8f9df051adb/jetified-play-services-measurement-impl-19.0.1/res" />
+      <root url="file://$PROJECT_DIR$/../Android-Firebase-Crime-Report-Missing-person-Alart/caches/transforms-2/files-2.1/6e2d06d47a3c7103af6520402047f393/jetified-play-services-measurement-impl-19.0.1/res" />
+      <root url="jar://$PROJECT_DIR$/../Android-Firebase-Crime-Report-Missing-person-Alart/caches/transforms-2/files-2.1/6e2d06d47a3c7103af6520402047f393/jetified-play-services-measurement-impl-19.0.1/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../Android-Firebase-Crime-Report-Missing-person-Alart/caches/transforms-2/files-2.1/6e2d06d47a3c7103af6520402047f393/jetified-play-services-measurement-impl-19.0.1/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$USER_HOME$/StudioProjects/Android-Firebase-Crime-Report-Missing-person-Alart/caches/modules-2/files-2.1/com.google.android.gms/play-services-measurement-impl/19.0.1/4081ead50727316792182bf4b84c30de2d3644ce/play-services-measurement-impl-19.0.1-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Android-Firebase-Crime-Report-Missing-person-Alart/caches/modules-2/files-2.1/com.google.android.gms/play-services-measurement-impl/19.0.1/4081ead50727316792182bf4b84c30de2d3644ce/play-services-measurement-impl-19.0.1-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES />
   </library>
